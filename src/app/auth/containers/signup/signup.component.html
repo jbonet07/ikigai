@@ -1,0 +1,38 @@
+<div class="sign-up-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-7 col-md-7 col-sm-offset-1 col-md-offset-2 sign-in-text">
+        <div>
+          <span>THAT’S IT!</span>
+          <br>
+          <span>We hope this little exercice helped you learn more about yourself.</span>
+        </div>
+        <div>
+          Sing in with your email and we will send you a link to your personal IKIGAI dashboard! (Super cool)
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-5 col-md-5 col-sm-offset-1 col-md-offset-2 sign-up-form">
+        <form (ngSubmit)="onSubmit()" #f="ngForm">
+          <div id="user-data" ngModelGroup="userData" #userData="ngModelGroup">
+            <div class="form-group">
+              <input type="text" id="name" class="form-control" ngModel name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" class="form-control" name="email" placeholder="Your e-mail" ngModel required #email="ngModel">
+              <!--<span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email!</span>-->
+            </div>
+            <div class="form-group">
+              <input type="password" id="password" class="form-control" ngModel name="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+              <input type="password" id="confirmPassword" class="form-control" ngModel name="confirmPassword" placeholder="Confirm password"
+                required>
+            </div>
+          </div>
+          <!--<p *ngIf="!userData.valid && userData.touched">User Data is invalid!</p>-->
+          <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

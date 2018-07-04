@@ -1,0 +1,36 @@
+html {
+  background-color: black;
+}
+.sign-up-content {
+  background-color: black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 3.25em;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+  color: var(--white);
+}
+form,
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}

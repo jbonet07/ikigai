@@ -1,0 +1,22 @@
+<div class="container">
+  <span class="print-steps">{{ displayAnswers() }}</span>
+  <form>
+    <div>
+      <textarea type="text" placeholder={{input_placeholder}} class="form-control wideInput" id="answer-in" required [(ngModel)]="responseText"
+        name="answer" #name="ngModel"> </textarea>
+    </div>
+
+    <div [hidden]="name.valid || name.pristine" class="alert alert-danger">Answer required</div>
+
+    <div class="buttons" *ngIf="!edit">
+      <button type="button" class="button" (click)="goBack()">Back</button>
+      <button type="button" class="button" [disabled]="!name.valid" (click)="goNext()">Continue</button>
+    </div>
+
+    <div class="buttons" *ngIf="edit">
+      <button type="button" class="button" [routerLink]="['/ikigai']">Cancel</button>
+      <button type="button" class="button" [disabled]="!name.valid" (click)="goIkigai()">Save</button>
+    </div>
+  </form>
+
+</div>

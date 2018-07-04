@@ -1,0 +1,29 @@
+@import "../../../common/sass/colors";
+@import "../../../common/sass/buttons";
+
+#start-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
+  margin: auto;
+  font-size: 3.25em;
+}
+.btn-primary {
+  font-size: 0.58em;
+  width: 20%;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #4a90e2;
+  background-color: var(--dark-sky-blue);
+}
+.start-here-main-texts {
+  text-align: center;
+  color: #ffffff;
+  color: var(--white);
+}
+
+.start {
+  font-weight: 400;
+}

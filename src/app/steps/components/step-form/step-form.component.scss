@@ -1,0 +1,29 @@
+@import "../../../common/sass/buttons";
+@import "../../../common/sass/colors";
+.print-steps {
+  font-size: 2.25em;
+  font-weight: 300;
+  line-break: auto;
+  text-align: center;
+  color: var(--scarlet);
+}
+#answer-in {
+  height: 10em;
+
+  font-size: 2.25em;
+  border-radius: 0.5em;
+  background-color: $white;
+  border: solid 1px $grey;
+  text-align: start;
+  margin-top: 1.25em;
+  margin-bottom: 2.5em;
+}
+::placeholder {
+  font-size: 1em;
+  font-weight: 300;
+  color: $grey;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}

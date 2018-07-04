@@ -1,0 +1,15 @@
+.sign-in-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}

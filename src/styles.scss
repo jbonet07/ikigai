@@ -1,0 +1,83 @@
+:root {
+  --white: #ffffff;
+  --squash: #f5a623;
+  --aqua-marine: #50e3c2;
+  --scarlet: #d0021b;
+  --dark-grass-green: #417505;
+  --light-sage: #b8e986;
+  --warm-grey: #9b9b9b;
+  --dark-sky-blue: #4a90e2;
+  --vivid-purple: #9013fe;
+  --apple-green: #7ed321;
+  --violet: #bd10e0;
+}
+html {
+  font-size: 1em;
+}
+html,
+body {
+  font-family: "Open Sans";
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  color: var(--white);
+}
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.grey-small-text {
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  color: #9b9b9b;
+  color: var(--warm-grey);
+}
+.button {
+  font-size: 2em;
+}
+.orangeText {
+  color: var(--squash);
+}
+.blueText {
+  color: var(--dark-sky-blue);
+}
+.greenText {
+  color: var(--apple-green);
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 0.55em;
+  }
+}
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 0.7em;
+  }
+}
+@media only screen and (orientation: landscape) {
+  html {
+    font-size: 0.35em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 1em;
+  }
+}

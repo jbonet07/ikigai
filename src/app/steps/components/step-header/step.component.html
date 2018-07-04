@@ -1,0 +1,11 @@
+<div class="col-xs-12 col-sm-7 col-md-8 col-sm-offset-1 col-md-offset-2 steps">
+  <h1 class="steps__title">
+    <span class="steps__title-number" [ngClass]="step.class">{{step.title}}.</span>
+    <span class="steps__title-text" *ngFor="let piece of step.titleStep" [ngClass]="piece.class">
+      {{piece.text}}
+    </span>
+  </h1>
+  <span class="steps__subtitle" *ngFor="let piece of step.subtitle" [ngClass]="piece.class">
+    {{piece.text}}
+  </span>
+</div>
